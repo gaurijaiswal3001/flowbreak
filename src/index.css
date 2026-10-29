@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cream: #FAF7F0;
+    --bg-card: #FFFFFF;
+    --text-charcoal: #1E232A;
+    --accent-coral: #FF5A43;
+    --accent-lime: #72B01D;
+    --accent-blue: #2563EB;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: var(--text-charcoal);
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+  }
+}
+
+/* Playful doodle patterns and tactile shadows */
+.tactile-box {
+  background-color: #ffffff;
+  border: 2px solid #1E232A;
+  box-shadow: 3px 3px 0px #1E232A;
+  border-radius: 14px;
+}
+
+.tactile-box-coral {
+  background-color: #FF5A43;
+  color: #ffffff;
+  border: 2px solid #1E232A;
+  box-shadow: 3px 3px 0px #1E232A;
+}
+
+.tactile-box-lime {
+  background-color: #72B01D;
+  color: #ffffff;
+  border: 2px solid #1E232A;
+  box-shadow: 3px 3px 0px #1E232A;
+}
+
+.tactile-box-blue {
+  background-color: #2563EB;
+  color: #ffffff;
+  border: 2px solid #1E232A;
+  box-shadow: 3px 3px 0px #1E232A;
+}
+
+.tactile-btn {
+  border: 2px solid #1E232A;
+  box-shadow: 3px 3px 0px #1E232A;
+  transition: all 0.12s ease-in-out;
+}
+
+.tactile-btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #1E232A;
+}
+
+.tactile-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #1E232A;
+}
+
+.tactile-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: 1px 1px 0px #1E232A;
+}
+
+/* Sticker badge styling */
+.sticker-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  border: 1.5px solid #1E232A;
+  box-shadow: 1.5px 1.5px 0px #1E232A;
+}

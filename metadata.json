@@ -1,0 +1,6 @@
+{
+  "name": "FlowBreak - Playful HTML Form Testing Playground",
+  "description": "A playful HTML form testing playground that validates browser-native constraints, breaks forms with stress tests, and provides Gemini-powered explanations and HTML fixes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
